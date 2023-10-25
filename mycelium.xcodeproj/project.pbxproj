@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		A1A008B62AE8F6C400206CAC /* myceliumView.h in Headers */ = {isa = PBXBuildFile; fileRef = A1A008B52AE8F6C400206CAC /* myceliumView.h */; };
 		A1A008B82AE8F6C400206CAC /* myceliumView.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A008B72AE8F6C400206CAC /* myceliumView.m */; };
+		A1A008BF2AE8F7F700206CAC /* mycelium.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A008BE2AE8F7F700206CAC /* mycelium.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A1A008B22AE8F6C400206CAC /* mycelium.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mycelium.saver; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1A008B52AE8F6C400206CAC /* myceliumView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = myceliumView.h; sourceTree = "<group>"; };
 		A1A008B72AE8F6C400206CAC /* myceliumView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myceliumView.m; sourceTree = "<group>"; };
+		A1A008BE2AE8F7F700206CAC /* mycelium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mycelium.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,7 @@
 		A1A008A82AE8F6C400206CAC = {
 			isa = PBXGroup;
 			children = (
+				A1A008BE2AE8F7F700206CAC /* mycelium.swift */,
 				A1A008B42AE8F6C400206CAC /* mycelium */,
 				A1A008B32AE8F6C400206CAC /* Products */,
 			);
@@ -96,6 +99,7 @@
 				TargetAttributes = {
 					A1A008B12AE8F6C400206CAC = {
 						CreatedOnToolsVersion = 15.0.1;
+						LastSwiftMigration = 1500;
 					};
 				};
 			};
@@ -132,6 +136,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1A008BF2AE8F7F700206CAC /* mycelium.swift in Sources */,
 				A1A008B82AE8F6C400206CAC /* myceliumView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +262,7 @@
 		A1A008BC2AE8F6C400206CAC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -268,6 +274,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = bs10x.mycelium;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Debug;
@@ -275,6 +283,7 @@
 		A1A008BD2AE8F6C400206CAC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -286,6 +295,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = bs10x.mycelium;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Release;
